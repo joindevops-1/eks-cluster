@@ -17,8 +17,12 @@ spec:
     namespace: argocd
   # First time: keep manual. After you verify, turn on automated.
   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
       - CreateNamespace=true
       - ApplyOutOfSyncOnly=true
       - ServerSideApply=true
+      - PruneLast=true
   revisionHistoryLimit: 10
