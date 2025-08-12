@@ -17,6 +17,7 @@ spec:
       values: |
         clusterName: roboshop-dev
         region: us-east-1
+        hostNetwork: true
         serviceAccount:
           create: true
           name: aws-load-balancer-controller
