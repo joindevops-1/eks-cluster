@@ -7,9 +7,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-org/my-cluster-gitops.git
+    repoURL: https://github.com/joindevops-1/eks-cluster.git
     targetRevision: main
-    path: clusters/mycluster/apps   # child Application yamls live here
+    path: apps   # child Application yamls live here
     directory:
       recurse: true
   destination:
